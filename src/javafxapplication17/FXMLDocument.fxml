@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_RIGHT" prefHeight="658.0" prefWidth="546.0" spacing="5.0" style="-fx-background-color: rgba(25,25,25,0.8); -fx-border-radius: 40;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication17.FXMLDocumentController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Button fx:id="ebutton" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-background-color: rgba(255, 92, 71, 0.6);" text="X" textAlignment="RIGHT" textFill="#e1d8d8" />
+      <ComboBox fx:id="port_selection" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Port" style="-fx-background-color: rgba(255, 92, 71, 0.6);" />
+      <TextField fx:id="results" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-background-color: rgba(252, 239, 241, 1);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="operation" prefHeight="80.0" style="-fx-background-color: rgba(252, 239, 241, 1);">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <HBox prefHeight="52.0" prefWidth="299.0" spacing="5.0" style="-fx-border-radius: 40;">
+         <children>
+            <Button fx:id="ex" mnemonicParsing="false" onAction="#del" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="E">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="c" mnemonicParsing="false" onAction="#clear" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="C">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="rem" mnemonicParsing="false" onAction="#remaning" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="\%">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="div4" mnemonicParsing="false" onAction="#division" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="/">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="log1" mnemonicParsing="false" onAction="#log" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="log">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="fac" mnemonicParsing="false" onAction="#factorial" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="!">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="145.0" prefHeight="52.0" prefWidth="299.0" spacing="5.0" style="-fx-border-radius: 40;">
+         <children>
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="7">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="8">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="9">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="mult" mnemonicParsing="false" onAction="#multiplication" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="x">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="ln1" mnemonicParsing="false" onAction="#ln" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="ln">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="s1" mnemonicParsing="false" onAction="#sin" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="sin">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="52.0" prefWidth="299.0" spacing="5.0" style="-fx-border-radius: 40;">
+         <children>
+            <Button fx:id="four" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="five" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="six" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="6">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="add" mnemonicParsing="false" onAction="#addition" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="+">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button fx:id="pow1" mnemonicParsing="false" onAction="#power" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="X^Y">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="c1" mnemonicParsing="false" onAction="#cos" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="cos">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="52.0" prefWidth="299.0" spacing="5.0" style="-fx-border-radius: 40;">
+         <children>
+            <Button fx:id="one" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="two" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="three" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="sub" mnemonicParsing="false" onAction="#subtraction" prefHeight="87.0" prefWidth="102.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="-">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="ep1" mnemonicParsing="false" onAction="#epower" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="e^x">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="t1" mnemonicParsing="false" onAction="#tan" prefHeight="84.0" prefWidth="96.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="tan">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="97.0" prefWidth="363.0" spacing="5.0" style="-fx-border-radius: 40;">
+         <children>
+            <Button fx:id="zero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="79.0" prefWidth="70.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text="0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="dot" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(252, 239, 241, 1); -fx-border-radius: 50; -fx-border-color: rgba(252, 239, 241, 1); -fx-background-radius: 50;" text=".">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="eq" mnemonicParsing="false" onAction="#equality" prefHeight="79.0" prefWidth="162.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="=">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="r1" mnemonicParsing="false" onAction="#sqRoot" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="√">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="Hswitch" mnemonicParsing="false" onAction="#hardwareSwitch" prefHeight="82.0" prefWidth="87.0" style="-fx-background-color: rgba(255, 92, 71, 0.6); -fx-border-radius: 50; -fx-border-color: rgba(255, 92, 71, 0.6); -fx-background-radius: 50;" text="Connect">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
